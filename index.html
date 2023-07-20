@@ -91,7 +91,14 @@
           transform: scale(1);
         }
       }
-
+      .align-mobile{
+          margin: auto;
+        }
+      @media screen and (max-width:600px) {
+        .align-mobile{
+          margin-left: 8%;
+        }
+      }
     </style>
   </head>
   <body class="text-gray-800 antialiased">
@@ -122,7 +129,7 @@
     
     <main>
       <section
-        class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen"
+        class="relative pt-16 pb-32 flex content-center items-center justify-center min-h-screen "
         style="background-image: url('https://cdn.pixabay.com/photo/2015/05/28/23/12/auto-788747_960_720.jpg');"
         >
         <div class="absolute top-0 w-full h-full bg-center bg-cover">
@@ -133,7 +140,7 @@
           <br>
           <br>
 
-          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center align-mobile">
             <div class="pr-12">
               <h1 class="text-white font-semibold text-5xl">
                 Confie nos especialistas em guinchos e socorro veicular 24 horas.
