@@ -51,12 +51,21 @@
       gtag('config', 'AW-10831810385');
     </script>
 
+    <script>
+        document.body.addEventListener('scroll', function (event) {
+    // Verifique se a rolagem horizontal está ocorrendo
+    if (event.target.scrollLeft !== 0) {
+      // Impedir a rolagem horizontal, definindo a posição de rolagem de volta para 0
+      event.target.scrollLeft = 0;
+    }
+  });
+    </script>
     <style>
       body{
         display: flex;
-        max-width: fit-content;
-        margin: auto;
         width: 100%;
+        flex-direction: column;
+        margin: auto;
         overflow-x: hidden;
         min-zoom: 1;
         max-zoom: 1;
